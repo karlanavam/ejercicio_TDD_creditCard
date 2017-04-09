@@ -4,6 +4,9 @@ function isValidCard(creditCardNumber) {
      return "Ingresa un numero";
    }
 
+   if(typeof creditCardNumber != "number"){ //Prueba 2
+    	return "Error de dato";
+    } 
 
 
 }
