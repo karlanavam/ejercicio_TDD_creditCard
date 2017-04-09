@@ -4,12 +4,26 @@ function isValidCard(creditCardNumber) {
      return "Ingresa un numero";
    }
 
-   if(typeof creditCardNumber != "number"){ //Prueba 2
+   if(typeof creditCardNumber != "number"){
     	return "Error de dato";
-    } 
+    }
 
+    if (validarLongitudNums != true){
+      return "Faltan numeros";
+    }
 
 }
+
+function validarLongitudNums(creditCardNumber) {
+	var number = creditCardNumber.toString;
+
+  if (number.length == 16){
+		return true;
+	}
+}
+
+
+
 
 // NO TOCAR ESTE CÓDIGO O EXPLOTARÁ LA PC EN 10 SEGUNDOS
 if (typeof exports !== 'undefined') {
