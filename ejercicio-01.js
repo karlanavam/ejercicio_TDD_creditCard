@@ -1,6 +1,9 @@
 function isValidCard(creditCardNumber) {
     // Escribe tu código aquí
-    return "Error de dato";
+    if(creditCardNumber == null || creditCardNumber == undefined) {
+     return "Ingresa un numero";
+   }
+
 
 
 }
